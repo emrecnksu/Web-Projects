@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="../accordion-alpine-js/styles/accordion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
+</head>
+<body class="bg-dark text-white">
+    <div class="container p-5" x-data="{ openTab: 0 }">
+        <div x-data="{ text1: 'Sunt aut facere provident occaecati excepturi optio reprehenderit' }">
+            <div class="container cont-a bg-secondary" x-bind:class="{ 'textTab': openTab === 1 }">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span x-text="text1" class="p-3"></span>
+                    <button x-on:click="openTab = (openTab === 1) ? 0 : 1" class="btn btn-secondary dropdown-toggle"></button>
+                </div>
+                <div x-show="openTab === 1" x-cloak class="mt-1">
+                    <div class="container d-flex bg-white text-dark p-0 m-0">
+                        <img src="../accordion-alpine-js/images/mountain-1.jpg" class="img img-mountain d-flex p-0 m-0">
+                        <div class="p-3">
+                            <p>quia et suscipit recusandae consequuntur expedita et cum rephenderit molestiae ut ut quas
+                                totam nostrum rerum est autem sunt rem eveniet architecto
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <br>
+    
+        <div x-data="{ text2: 'Qui est esse' }">
+            <div class="container cont-a bg-secondary" x-bind:class="{ 'textTab': openTab === 2 }">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span x-text="text2" class="p-3"></span>
+                    <button x-on:click="openTab = (openTab === 2) ? 0 : 2" class="btn btn-secondary dropdown-toggle"></button>
+                </div>
+                <div x-show="openTab === 2" x-cloak class="mt-1">
+                    <div class="container d-flex bg-white text-dark p-0 m-0">
+                        <img src="../accordion-alpine-js/images/mountain-2.jpg" class="img img-mountain">
+                        <div class="p-3">
+                            <p>est rerum tempore vitae sequi sint nihil rephenderit dolor beatae ea dolores neque fugiat blanditiis
+                                voluptate porro vel nihil molestiae ul reiciendis qui aperiam non debitis possimus qui neque nisi nulla
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div x-data="{ text3: 'Malesuada fames ac turpis egestas sed tempus urna et pharetra' }">
+            <div class="container cont-a bg-secondary" x-bind:class="{ 'textTab': openTab === 3 }">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span x-text="text3" class="p-3"></span>
+                    <button x-on:click="openTab = (openTab === 3) ? 0 : 3" class="btn btn-secondary dropdown-toggle"></button>
+                </div>
+                <div x-show="openTab === 3" x-cloak class="mt-1">
+                    <div class="container d-flex bg-white text-dark p-0 m-0">
+                        <img src="../accordion-alpine-js/images/mountain-3.jpg" class="img img-mountain">
+                        <div class="p-3">
+                            <p>est rerum tempore vitae sequi sint nihil rephenderit dolor beatae ea dolores neque fugiat blanditiis
+                                voluptate porro vel nihil molestiae ul reiciendis qui aperiam non debitis possimus qui neque nisi nulla
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <div x-data="{ text4: 'Ac tincidunt vitae semper quis lectus nulla at' }">
+            <div class="container cont-a bg-secondary" x-bind:class="{ 'textTab': openTab === 4 }">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span x-text="text4" class="p-3"></span>
+                    <button x-on:click="openTab = (openTab === 4) ? 0 : 4" class="btn btn-secondary dropdown-toggle"></button>
+                </div>
+                <div x-show="openTab === 4" x-cloak class="mt-1">
+                    <div class="container d-flex bg-white text-dark p-0 m-0">
+                        <img src="../accordion-alpine-js/images/mountain-4.jpg" class="img img-mountain">
+                        <div class="p-3">
+                            <p>est rerum tempore vitae sequi sint nihil rephenderit dolor beatae ea dolores neque fugiat blanditiis
+                                voluptate porro vel nihil molestiae ul reiciendis qui aperiam non debitis possimus qui neque nisi nulla
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div x-data="{ text5: 'Elementum nisi quis eleifend quam adipiscing vitae proin' }">
+            <div class="container cont-a bg-secondary" x-bind:class="{ 'textTab': openTab === 5 }">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span x-text="text5" class="p-3"></span>
+                    <button x-on:click="openTab = (openTab === 5) ? 0 : 5" class="btn btn-secondary dropdown-toggle"></button>
+                </div>
+                <div x-show="openTab === 5" x-cloak class="mt-1">
+                    <div class="container d-flex bg-white text-dark p-0 m-0">
+                        <img src="../accordion-alpine-js/images/mountain-5.jpg" class="img img-mountain">
+                        <div class="p-3">
+                            <p>est rerum tempore vitae sequi sint nihil rephenderit dolor beatae ea dolores neque fugiat blanditiis
+                                voluptate porro vel nihil molestiae ul reiciendis qui aperiam non debitis possimus qui neque nisi nulla
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

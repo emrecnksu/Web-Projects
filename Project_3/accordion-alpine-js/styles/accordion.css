@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.img-mountain {
+    width: 50%;
+    display: flex;
+}
+
+
+.container .cont-a {
+    box-shadow: 0 0 0 3px whitesmoke;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.btn-secondary.dropdown-toggle:hover {
+    background-color: none; 
+  
+}
+
+
+.container .btn-dark {
+    color: lightgray ;
+}
+
+
+.navbar-nav .dark-link {
+    background-color: black;
+}
+
+
+.navbar-nav .dropdown:hover .btn-dark {
+    background-color: transparent; 
+    color: white; 
+    text-decoration-color: none;   
+    border: none;
+}
+
+
+.navbar-nav .dropdown:hover .dropdown-menu-dark {
+    display: block;
+    background-color: whitesmoke;
+}
+
+
+.navbar-nav .dropdown:hover .dropdown-menu-dark a {
+    color: black;
+}

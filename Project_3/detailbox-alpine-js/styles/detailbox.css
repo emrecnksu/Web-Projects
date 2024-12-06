@@ -1,0 +1,79 @@
+.cont-panel {
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 425px; 
+}
+
+.cont-panel .container-fluid {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 0;
+    border-radius: 25px; 
+    overflow: hidden; 
+}
+
+.cont-panel .container-fluid .tab-1{
+    flex: 1; 
+    text-align: center;
+    padding: 10px 15px;
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+    border-radius: 10px; 
+}
+
+.cont-panel .container-fluid .tab-2 {
+    flex: 1;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: grey;
+    color: rgb(5, 250, 5); 
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+
+.cont-panel .container-fluid .tab-1.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.cont-panel .container-fluid .tab-2.active {
+    color: rgb(5, 250, 5);
+    background-color: white;
+    font-weight: bold;
+}
+
+
+.p-3 {
+    border-radius: 20px; 
+}
+
+.tab-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    text-align: justify; 
+}
+
+@media only screen and (max-width: 768px) {
+    .cont-panel {
+        width: 90%; 
+        border-radius: 25px;
+    }
+
+    .cont-panel .container-fluid .tab-1,
+    .cont-panel .container-fluid .tab-2 {
+        font-size: 14px; 
+        padding: 8px 12px;
+    }
+}
